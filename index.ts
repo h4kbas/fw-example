@@ -8,7 +8,8 @@ const Options: IFWOptions = {
   Port: 443,
   Public: "./Public",
   Controllers,
-  Context: { Version: 1 }
+  Context: { Version: 1 },
+  AllowHTTP1: true,
 }
 
 const Site = new FW(Options)
