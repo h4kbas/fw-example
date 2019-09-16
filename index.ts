@@ -6,7 +6,7 @@ const Options: IFWOptions = {
   Key: readFileSync("./Cert/server-key.pem"),
   Root: "Home",
   Port: 443,
-  Public: "./Public",
+  Public: __dirname + "/Public",
   Controllers,
   Context: { Version: 1 },
   AllowHTTP1: true,
